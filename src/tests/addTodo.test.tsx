@@ -43,6 +43,7 @@ describe("<AddTodo/>", () => {
     fireEvent.change(descriptionInput, {
       currentTarget: { id: "description", value: "My description" },
     });
+
     const submitButton = await screen.findByTestId("btn");
     fireEvent.submit(submitButton);
     expect(mockSaveTodo).toBeCalled();

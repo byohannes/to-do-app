@@ -2,9 +2,9 @@ interface ITodo {
   _id: string;
   name: string;
   description: string;
-  status: string;
-  createdAt: string;
-  updatedAt: string;
+  status: boolean;
+  createdAt?: string;
+  updatedAt?: string;
 }
 type Props = {
   saveTodo: (e: React.FormEvent, formData: ITodo | any) => void;
@@ -16,7 +16,7 @@ type TodoProps = {
 
 type ApiDataType = {
   message: string;
-  status: string;
+  status: boolean;
   todos: ITodo[];
   todo?: ITodo;
 };
