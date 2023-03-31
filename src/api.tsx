@@ -21,7 +21,7 @@ export const addTodo = async (
     };
     const saveTodo: AxiosResponse<ApiDataType> = await axios.post(
       baseUrl + "/add-todo",
-      { todo }
+      todo
     );
     return saveTodo;
   } catch (error) {
