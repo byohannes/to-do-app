@@ -2,7 +2,7 @@ import express, { Express } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import todoRoutes from "../routes";
+import todoRoutes from "./routes";
 
 const app: Express = express();
 app.use(cors());

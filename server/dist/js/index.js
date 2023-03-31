@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const dotenv_1 = __importDefault(require("dotenv"));
-const routes_1 = __importDefault(require("../routes"));
+const routes_1 = __importDefault(require("./routes"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(routes_1.default);
